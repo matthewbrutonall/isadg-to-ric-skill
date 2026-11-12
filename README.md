@@ -6,6 +6,14 @@ A practical skill for [Claude Code](https://claude.ai/code) that helps archivist
 
 This is a focused conversion and migration tool, not a general RiC tutorial. It answers the question every archivist facing RiC actually asks: *"My catalogue is in ISAD(G) — what does each field become in RiC?"*
 
+## Install with your AI agent
+
+Copy and paste this into your agent:
+
+```text
+Install the ISAD(G) to RiC skill from https://github.com/matthewbrutonall/isadg-to-ric-skill using your agent's supported skill installation method. Use the packaged skill or keep the complete `isadg-to-ric` directory, including its `references`, together. Confirm the skill is available and tell me how to invoke it. Do not convert any catalogue data yet.
+```
+
 ## What It Covers
 
 - **The conceptual shift** — moving from ISAD(G)'s entity–attribute model (one unit of description, up to 26 attributes, strict hierarchy) to RiC's graph model (distinct entity types connected by named relations)
