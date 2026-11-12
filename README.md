@@ -1,5 +1,7 @@
 # ISAD(G) to RiC Conversion Skill for Claude Code
 
+![Archival hierarchy becoming a network of records, people, places, and dates](assets/isadg-to-ric-skill.png)
+
 A practical skill for [Claude Code](https://claude.ai/code) that helps archivists migrate descriptions from **ISAD(G)** to **Records in Contexts (RiC-CM 1.0)** — the new International Council on Archives (ICA) standard for archival description.
 
 This is a focused conversion and migration tool, not a general RiC tutorial. It answers the question every archivist facing RiC actually asks: *"My catalogue is in ISAD(G) — what does each field become in RiC?"*
