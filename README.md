@@ -1,18 +1,35 @@
-# ISAD(G) to RiC Conversion Skill for Claude Code
+# ISAD(G) to RiC Conversion Skill
 
 ![Archival hierarchy becoming a network of records, people, places, and dates](assets/isadg-to-ric-skill.png)
 
-A practical skill for [Claude Code](https://claude.ai/code) that helps archivists migrate descriptions from **ISAD(G)** to **Records in Contexts (RiC-CM 1.0)** — the new International Council on Archives (ICA) standard for archival description.
+A catalogue description written under **ISAD(G)**, a widely used archival description standard, will need new decisions if you want to represent it in **Records in Contexts (RiC)**. RiC can describe records alongside the people, places, activities, and other relationships around them.
 
-This is a focused conversion and migration tool, not a general RiC tutorial. It answers the question every archivist facing RiC actually asks: *"My catalogue is in ISAD(G) — what does each field become in RiC?"*
+This **agent skill** guides an assistant through those decisions, field by field. It is a reference and working method for archivists planning a migration; it is not a program that automatically rewrites a catalogue.
 
-## Install with your AI agent
+For example, an ISAD(G) file description might name *Parish Council* as its creator and sit inside a series called *Minutes*. In RiC, the file, its creator, and its relationship to the series can be described explicitly. The skill helps you decide which RiC entities and relationships express those facts. This is an illustrative example; your institution must review its own source data and modelling choices.
+
+## Who might use it?
+
+Archivists, cataloguers, and migration teams who already have ISAD(G) descriptions and want to plan or review a RiC representation. You can use it to work through one record, compare field mappings, or discuss a batch migration before writing import software.
+
+## What it helps you do
+
+- Match ISAD(G) elements such as reference code, title, dates, creator, and access conditions to possible RiC descriptions.
+- Decide whether a thing is a record, a group of records, a person or organisation, a date, or another RiC entity.
+- Keep important relationships visible, such as a file belonging to a series or a creator being connected to records.
+- Read a worked example that starts with an archival export and ends with RiC statements.
+
+The guidance also includes notes for US federal and European records-management contexts. Mappings are decisions to review, not guarantees that every field in your catalogue has one automatic equivalent. RiC guidance and ontology terms evolve, so check the current ICA sources and your local practice before production use.
+
+## Set it up with your AI agent
 
 Copy and paste this into your agent:
 
 ```text
 Install the ISAD(G) to RiC skill from https://github.com/matthewbrutonall/isadg-to-ric-skill using your agent's supported skill installation method. Use the packaged skill or keep the complete `isadg-to-ric` directory, including its `references`, together. Confirm the skill is available and tell me how to invoke it. Do not convert any catalogue data yet.
 ```
+
+Once installed, you might ask: “Using the ISAD(G) to RiC skill, show how this file-level description could be represented in RiC. Explain the choices and mark anything that needs local review.”
 
 ## What It Covers
 
@@ -30,13 +47,9 @@ Install the ISAD(G) to RiC skill from https://github.com/matthewbrutonall/isadg-
 
 Built on the official ICA crosswalk published in **RiC-AG 0.1** (October 2025) and **RiC-CM 1.0** (November 2023), with RiC-O 1.1 predicate names.
 
-## Install
+## Installation files
 
-```bash
-claude skills install https://github.com/matthewbrutonall/isadg-to-ric-skill
-```
-
-Or download `isadg-to-ric.skill` from this repository and install it directly.
+The packaged `isadg-to-ric.skill` file and the complete `isadg-to-ric/` directory are both provided. Use your agent's supported skill installation method and keep the reference files with `SKILL.md`.
 
 ## Structure
 
